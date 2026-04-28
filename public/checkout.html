@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout | carddesign.skin</title>
+    <meta name="description" content="Checkout for carddesign.skin orders." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp; FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp;</span>
+        <span>FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp; FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp;</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="carddesign.skin home">
+        <span class="brand-mark"></span>
+        <span>carddesign.skin</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="./index.html">Products</a>
+        <a href="./checkout.html">Checkout</a>
+      </nav>
+      <a class="cart-button" href="./index.html" aria-label="Back to shop">
+        <span class="cart-icon" aria-hidden="true"></span>
+        <span id="cartCount">0</span>
+      </a>
+    </header>
+
+    <main class="checkout-page">
+      <form class="checkout-layout" id="checkoutForm" novalidate>
+        <div class="checkout-main">
+          <section class="checkout-card">
+            <h2 class="checkout-card-title">Shipping address</h2>
+            <div class="form-grid">
+              <label class="wide">
+                <span>Full name</span>
+                <input name="name" required autocomplete="name" placeholder="Aarav Mehta" />
+              </label>
+              <label>
+                <span>Phone</span>
+                <input name="phone" required inputmode="tel" autocomplete="tel" placeholder="9876543210" />
+              </label>
+              <label>
+                <span>Email</span>
+                <input name="email" required type="email" autocomplete="email" placeholder="you@example.com" />
+              </label>
+              <label class="wide">
+                <span>Address</span>
+                <input name="address" required autocomplete="street-address" placeholder="House, street, landmark" />
+              </label>
+              <label>
+                <span>City</span>
+                <input name="city" required autocomplete="address-level2" placeholder="Mumbai" />
+              </label>
+              <label>
+                <span>State</span>
+                <input name="state" required autocomplete="address-level1" placeholder="Maharashtra" />
+              </label>
+              <label>
+                <span>Pincode</span>
+                <input id="pinInput" name="pin" required inputmode="numeric" maxlength="6" autocomplete="postal-code" placeholder="400001" />
+              </label>
+            </div>
+          </section>
+
+          <section class="checkout-card">
+            <h2 class="checkout-card-title">Shipping method</h2>
+            <div class="method-card method-card--selected">
+              <div class="method-card-row">
+                <span class="method-radio" aria-hidden="true"></span>
+                <strong class="method-name">Shiprocket Delivery (PAN India)</strong>
+                <span class="method-tag">Selected</span>
+              </div>
+              <div class="method-card-foot">
+                <span class="method-meta">Ships within 2–6 business days</span>
+                <span class="method-brand">Shiprocket</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="checkout-card">
+            <h2 class="checkout-card-title">Payment</h2>
+            <div class="method-card method-card--selected">
+              <div class="method-card-row">
+                <span class="method-radio" aria-hidden="true"></span>
+                <strong class="method-name">Razorpay Secure (UPI, Cards, Wallets)</strong>
+                <span class="payment-logos" aria-hidden="true">
+                  <span class="pay-logo">UPI</span>
+                  <span class="pay-logo">VISA</span>
+                  <span class="pay-logo">MC</span>
+                  <span class="pay-logo pay-logo--more">+10</span>
+                </span>
+              </div>
+              <p class="method-note">You'll be redirected to Razorpay Secure (UPI, Cards, Int'l Cards, Wallets) to complete your purchase.</p>
+            </div>
+          </section>
+        </div>
+
+        <aside class="checkout-side">
+          <div class="bag-summary" aria-labelledby="summaryTitle">
+            <h2 id="summaryTitle" class="bag-summary-title">Bag summary</h2>
+            <div id="summaryItems" class="bag-items"></div>
+            <div class="bag-rows">
+              <div class="bag-row">
+                <span>Subtotal</span>
+                <strong id="subtotal">Rs 0</strong>
+              </div>
+              <div class="bag-row bag-row--discount" id="discountRow" hidden>
+                <span>B2G1 Discount</span>
+                <strong id="discount">- Rs 0</strong>
+              </div>
+              <div class="bag-row">
+                <span>Shipping</span>
+                <strong id="shipping">Rs 0</strong>
+              </div>
+            </div>
+            <div class="bag-total">
+              <span>Total</span>
+              <strong id="total">Rs 0</strong>
+            </div>
+            <button class="pay-now" type="submit">Pay now</button>
+            <p class="status-line" id="checkoutStatus" role="status"></p>
+          </div>
+        </aside>
+      </form>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="./policy.html">Store Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+        <a href="./shipping.html">Shipping</a>
+        <a href="https://instagram.com/carddesign.skin" target="_blank" rel="noopener noreferrer" class="footer-contact">Contact</a>
+      </div>
+      <div class="footer-copy">CARDDESIGN.SKIN © 2026</div>
+    </footer>
+
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="./store.js"></script>
+    <script src="./checkout.js"></script>
+  </body>
+</html>

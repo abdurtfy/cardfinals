@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "Z_qiKU6GoghbaBA0XkMLv"
+uri = "file://screenshots/email-confirmation.jpg"
+type = "image"
+title = "Order confirmation email preview (sent to abdurtfy@gmail.com)"
+
+[[outputs]]
+id = "0njx4YucIm6d2ANKOM5wC"
+uri = "file://screenshots/email-confirmation-v2.jpg"
+type = "image"
+title = "Test order confirmation for abdurtfy@gmail.com (Kanpur, 208001)"

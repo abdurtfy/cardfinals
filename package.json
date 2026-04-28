@@ -1,0 +1,14 @@
+{
+  "name": "carddesign-skin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "carddesign.skin storefront and admin",
+  "main": "server.js",
+  "engines": {
+    "node": "20.x"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  }
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmed | carddesign.skin</title>
+    <meta name="description" content="Order confirmation for carddesign.skin." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp; FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp;</span>
+        <span>FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp; FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp;</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="carddesign.skin home">
+        <span class="brand-mark"></span>
+        <span>carddesign.skin</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="./index.html">Products</a>
+        <a href="./checkout.html">Checkout</a>
+      </nav>
+    </header>
+
+    <main class="checkout-page">
+      <section class="checkout-head" aria-labelledby="confirmationTitle">
+        <p class="eyebrow">Order placed</p>
+        <h1 id="confirmationTitle">Confirmed</h1>
+      </section>
+
+      <section class="confirmation-panel" id="confirmationPanel" aria-live="polite">
+        <p class="muted">Loading order...</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-links">
+        <a href="./policy.html">Store Policy</a>
+        <a href="./terms.html">Terms of Service</a>
+        <a href="./shipping.html">Shipping</a>
+        <a href="https://instagram.com/carddesign.skin" target="_blank" rel="noopener noreferrer" class="footer-contact">Contact</a>
+      </div>
+      <div class="footer-copy">CARDDESIGN.SKIN © 2026</div>
+    </footer>
+
+    <script src="./confirmation.js"></script>
+  </body>
+</html>

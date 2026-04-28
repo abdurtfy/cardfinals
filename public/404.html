@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page not found | carddesign.skin</title>
+    <meta name="description" content="The page you are looking for does not exist." />
+    <meta name="robots" content="noindex" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .notfound-page {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 24px;
+        text-align: center;
+      }
+      .notfound-card {
+        max-width: 560px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+      }
+      .notfound-code {
+        font-family: "Archivo Black", system-ui, sans-serif;
+        font-size: clamp(80px, 18vw, 160px);
+        line-height: 1;
+        letter-spacing: -0.04em;
+        background: linear-gradient(135deg, #f5d57a, #e7c25b 60%, #b88a2b);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin: 0;
+      }
+      .notfound-title {
+        font-family: "Archivo Black", system-ui, sans-serif;
+        font-size: clamp(28px, 5vw, 44px);
+        line-height: 1.05;
+        margin: 0;
+      }
+      .notfound-text {
+        color: rgba(245, 235, 215, 0.72);
+        font-size: 16px;
+        margin: 0;
+      }
+      .notfound-actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 8px;
+      }
+      .notfound-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 14px 22px;
+        border-radius: 999px;
+        font-weight: 700;
+        font-size: 14px;
+        text-decoration: none;
+        border: 1px solid rgba(245, 235, 215, 0.16);
+        transition: transform 120ms ease, background 120ms ease;
+      }
+      .notfound-btn-primary {
+        background: linear-gradient(135deg, #f5d57a, #b88a2b);
+        color: #1a120a;
+        border-color: transparent;
+      }
+      .notfound-btn-secondary {
+        background: rgba(245, 235, 215, 0.04);
+        color: #f5ebd7;
+      }
+      .notfound-btn:hover {
+        transform: translateY(-1px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp; FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp;</span>
+        <span>FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp; FREE DELIVERY ON ORDERS OVER ₹495 &nbsp;•&nbsp; BUY 2 GET 1 FREE &nbsp;•&nbsp;</span>
+      </div>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="carddesign.skin home">
+        <span class="brand-mark"></span>
+        <span>carddesign.skin</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary navigation">
+        <a href="/">Products</a>
+        <a href="/checkout.html">Checkout</a>
+      </nav>
+    </header>
+
+    <main class="notfound-page">
+      <div class="notfound-card">
+        <p class="notfound-code">404</p>
+        <h1 class="notfound-title">Page not found</h1>
+        <p class="notfound-text">
+          The page you tried to open doesn't exist or has been moved.
+          Let's get you back to the good stuff.
+        </p>
+        <div class="notfound-actions">
+          <a class="notfound-btn notfound-btn-primary" href="/">Back to home</a>
+          <a class="notfound-btn notfound-btn-secondary" href="/checkout.html">View cart</a>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
